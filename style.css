@@ -14,8 +14,8 @@
 }
 .container{
     width: 100%;
-    /* border: 1px solid red; */
-    overflow: auto;
+    display: flow-root;
+    /* border: 1px solid rgb(124, 227, 6); */
 }
 /* header */
  .united{
@@ -27,6 +27,7 @@
     float: right;
     margin-top: 36px;
     padding-top: 2px;
+    clear: both;
 }
 .united li{
     display: inline-block;
@@ -38,12 +39,15 @@
     text-decoration: none;
     color: #6c7178;
 } 
+ 
  /* 2nd row */
 .united-1{
     font-family: var(--FF-HelveticaNeue);
     font-size: 18px;
     letter-spacing: 0.5px;
-    float: left;
+    clear: right;
+    display: flow-root;
+    height: 52px;
     padding: 0;
 }
 .united-1 li{
@@ -52,7 +56,7 @@
     float: left;
 }
  .menu-box{
-    margin-top: 8px;
+    margin-top: 25px;
     width: 34px;
     height: 34px;
     float: left;
@@ -63,9 +67,9 @@
     display: inline-block;
 }
 .extra a{
-    margin-top: 8px;
+    margin-top: 24px;
     font-family: var(--FF-HelveticaNeue);
-    margin-left: 30px;
+    margin-left: 54px;
     width: 120px;
     font-size: 24px;
     text-align: left;
@@ -76,10 +80,9 @@
     color: #6c7178;
 }
 .search-box{
-    
-    margin: 0;
+    margin-top: 13px;
     font-family: var(--FF-HelveticaNeue);
-    margin-left: 6px;
+    margin-left: 30px;
     border: solid 1px rgba(0, 0, 0, 0.25);
     padding: 7px 0px 15px 13px;
     width: 185px;
@@ -106,16 +109,23 @@
 }
  
 /* logo */
-.logo-box{
+ .logo-box{
     margin-top: -10px;
-    width: 380px;
+    width: 150px;
     text-align: center;
+    margin: 0 auto;
+}
+.logo-box li{
+    text-decoration: none;
+    list-style: none;
+}
+ul.logo-box{
+    padding-left: 0;
 }
 .logo-box a{
     line-height: 0;
     display: inline-block;
 }
- 
 .brand_name{
     font-family: var(--FF-HelveticaNeue);
     font-size: 22px;
@@ -131,17 +141,22 @@
     letter-spacing: 3px;
     color: #6c7178;
 }
+ 
 
 .right_nav{
-    /* border: 1px dotted rgb(23, 0, 200); */
+    height: 52px;
+    margin-top: 10px;
     font-family: var(--FF-HelveticaNeue);
     font-size: 18px;
     letter-spacing: 0.5px;
     float: right;
     padding-top: 15px;
-
+    margin-bottom: 0;
 }
  
+ul.right_nav{
+    padding-left: 0;
+}
 .right_nav li{
     text-decoration: none;
     list-style: none;
@@ -171,7 +186,7 @@
     font-family:var(--FF-HelveticaNeue);
     width: 124px;
     height: 29px;
-    margin-left: 45px;
+    margin-left: 65px;
     font-size: 24px;
     letter-spacing: 1.09px;
     text-align: right;
@@ -189,6 +204,29 @@
 } 
 
 /*********** Header End***************/
+/* heading _font */
+.heading_font{
+    font-family:var(--FF-Baskerville);
+    font-size: 56px;
+    color:black;
+    text-align: center;
+}
+/* sub heading font */
+.sub_heading{
+    font-family: var(--FF-GillSans);
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+}
+/* anchor tag link */
+.anchor_font {
+    font-family: var(--FF-GillSans);
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 2.18px;
+}
 /* people */ 
 .people{
     width:100%;
@@ -198,6 +236,7 @@
     margin-top: 71px;
     float: left;
     padding: 247px 0;
+    display: flow-root;
 }
 .help{
     font-family: GillSans;
@@ -210,24 +249,15 @@
 }
 .tips{
     margin-top: 18px;
-    font-family:var(--FF-Baskerville);
-    font-size: 56px;
-    text-align: center;
-    color:black;
     margin-bottom: 0;
 }
 .show{
-    font-family: var(--FF-GillSans);
     margin-top: 32px;
-    font-family: GillSans;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 2.18px;
-    text-align: center;
     margin-bottom: 0;
 }
+
 .show a{
-    color:black;
+    color: black;
 }
 /****** our accessory ***********/
 .accessory{
@@ -237,25 +267,19 @@
 }
 
 .for_ladies{
-    font-family: Baskerville;
-    font-size: 56px;
-    text-align: center;
-    color:black;
     margin-bottom: 12px;
 }
 
 .bags{
-    font-family: var(--FF-GillSans);
-    font-size: 27px;
-    text-align: center;
-    color:black;
     margin-bottom: 0px;
 }
+
 /* grid boxes */
 .box_container,
 .box_container-2
 {
     padding-left: 60px; 
+    display: flow-root;
 }
 
 .box-1{
@@ -321,6 +345,7 @@
 
 .stylers{
   padding-top: 155px;
+  
 }
 .style{
     font-family:var(--FF-GillSans);
@@ -330,24 +355,17 @@
     margin-bottom: 0;
 }
 .simple{
-    font-family: var(--FF-Baskerville);
     margin-top: 30px;
-    font-family: Baskerville;
-    font-size: 56px;
-    text-align: center;
-    color: black;
     margin-bottom: 0;
 }
 .punk{
-    font-family:var(--FF-GillSans);
     width: 100%;
     height: 125px;
-    font-size: 27px;
-    text-align: center;
-    color: black;
     padding-top: 15px;
     margin-bottom: 0;
 }
+
+
 .punk p{
     margin: 0;
     font-family:var(--FF-GillSans);
@@ -355,22 +373,18 @@
 .tear{
     margin-bottom: 0;
     margin-top: 70px;
-    font-family:var(--FF-GillSans);
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 2.18px;
-    text-align: center;
     text-decoration: underline;
 }
 .tear a{
     color: #797979;
 }
+
+ 
 .style-box{
-   float: left;
-   padding:0 180px;
    margin-top: 48px;
 }
 .s-box{
+    margin: 0 auto;
     background-color: #d8d8d8;
     width: 752px ;
     height: 425px;
@@ -384,27 +398,14 @@
     text-align: center;
 }
 .collection{
-    font-family:var(--FF-Baskerville);
-    font-size: 56px;
-    text-align: center;
-    color:black;
     margin-bottom: 0;
 }
 .robot{
     margin-top: 12px;
-    font-family: var(--FF-GillSans);
-    font-size: 27px;
-    font-weight: 300;
-    text-align: center;
     margin-bottom: 0;
 }
 .track{
     margin-top: 70px;
-    font-family: var(--FF-GillSans);
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 2.18px;
-    text-align: center;
     text-decoration: underline;
     margin-bottom: 0;
 }
@@ -416,6 +417,7 @@
 .shoe-boxes{
    margin-top: 38px;
    padding:0  70px;
+   display: flow-root;
 }
 .sb-1{
     width: 454px;
@@ -504,9 +506,7 @@
     float: right;
     margin-right: 70px;
 }
-/* .here_help{
-    border: 1px solid green;
-} */
+
 .htp_text-1{
     font-family: var(--FF-Baskerville);
     width: 464px;
@@ -515,14 +515,6 @@
     text-align: center;
     color: black ;
     
-}
-.htp_text-2{
-    font-family: var(--FF-Baskerville);
-    width: 464px;
-    font-family: Baskerville;
-    font-size: 38px;
-    text-align: center;
-    color: black ;
 }
 /********** here_help end **************/
 /********** Toll start   **************/
@@ -687,6 +679,7 @@
     float: left;
     margin-left: 100px;
     font-family: var(--FF-Baskerville);
+    margin-bottom: 116px;
 }
 .r_links{
     /* border: 1px solid rgb(77, 0, 128); */
@@ -726,7 +719,6 @@
 .diamond{
     width: 280px;
     float: left;
-    /* margin-left: 0px; */
     font-size: 32px;
     color: #444;
 }
@@ -748,13 +740,10 @@
     font-size: 18px;
 }
 .line{
-    float: left;
-    width: 1010px;
+    width: 1300px;
     height: 1px;
-    margin: 116px 8px 62px 0;
+    margin: 0 auto;
     background-color: #a8a8a8;
-    margin-top: 116px;
-    margin: 116px 100px 0 100px;
     
 }
 
@@ -811,7 +800,7 @@
 .logo-box-1{
     width: 150px;
     height: 58px;
-    float: left;
+    margin: 0 auto;
     text-align: center;
 }
  
