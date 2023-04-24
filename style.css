@@ -681,6 +681,7 @@ ul.nav-rightside-menu{
     color:#a8a8a8;
 }
 .footer-service-links{
+     padding-top: 100px; 
     /* border: 1px solid green; */
     float: left;
     margin-left: 100px;
@@ -688,6 +689,7 @@ ul.nav-rightside-menu{
     margin-bottom: 116px;
 }
 .footer-legal-links{
+     padding-top: 100px;
     /* border: 1px solid rgb(77, 0, 128); */
     float: right;
     margin-right: 90px;
