@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
 
@@ -27,7 +27,7 @@
     margin-top: 36px;
     padding-top: 2px;
     clear: both;
-    display: flow-root;
+    /* display: flow-root; */
 }
 .navigation li{
     display: inline-block;
@@ -52,6 +52,11 @@
 .main-navigation li{
     text-decoration: none;
     list-style: none;
+    float: left;
+}
+.nav-left-side-menu{
+    /* border: 1px solid green; */
+    display: flow-root;
     float: left;
 }
  .nav-menu{
@@ -143,12 +148,11 @@ ul.nav-logo-box{
  
 
 .nav-rightside-menu{
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: var(--FF-HelveticaNeue);
     font-size: 18px;
     letter-spacing: 0.5px;
     float: right;
-    padding-top: 15px;
     margin-bottom: 0;
 }
  
@@ -201,7 +205,7 @@ ul.nav-rightside-menu{
     padding-left: 15px;
 } 
 
-/*********** Header End***************/
+/*********** Header En   d***************/
 /* heading _font */
 .lg_font{
     font-family:var(--FF-Baskerville);
@@ -226,7 +230,7 @@ ul.nav-rightside-menu{
     letter-spacing: 2.18px;
 }
 /* people */ 
-.df-banner{
+.banner{
     width:100%;
     text-align: center;
     background-color: #f5f5f5;
@@ -236,27 +240,28 @@ ul.nav-rightside-menu{
     padding: 247px 0;
     display: flow-root;
 }
-.df-banner h1{
+.banner h1{
     margin-top: 18px;
     margin-bottom: 0;
 }
-.df-banner a{
+.banner a{
     color: black;
 }
-.df-banner p:nth-child(1){
+.banner p:nth-child(1){
     font-size: 22px;
     text-align: center;
     color:black;
     font-family: var(--FF-GillSans);
     margin-bottom: 0;  
 }
-.df-banner p:last-child{ 
+.banner p:last-child{ 
     margin-top: 32px;
     margin-bottom: 0;
     font-size: 24px;
     font-family: var(--FF-GillSans);
 }
 /****** our accessory ***********/
+/* our accessory */
 .collections{
     font-size: 56px;
     font-family: var(--FF-Baskerville);  
@@ -269,73 +274,52 @@ ul.nav-rightside-menu{
     margin-bottom: 0px;
 }
 
-/* grid boxes */
-.card_container,
-.card_container-2
-{
-    padding-left: 60px; 
-    display: flow-root;
+/* calc */
+.shoe-image:nth-child(1){
+    background-color:#d8d8d8 ;
+}
+.shoe-image:nth-child(2){
+    background-color:#d8d8d8 ;
+}
+.shoe-image:nth-child(3){
+    background-color:#ececec ;
 }
 
-.card-row-1{
-    margin-top: 78px;
-    width: 220px;
-    height: 220px;
-    background-color: #d8d8d8;
+.shoe-first-row{
+    display: flow-root;
+    padding-top: 78px;
 }
-.collection-text{
-    font-family: var(--FF-GillSans);
-    font-size: 18px;
+
+.shoe-image{
+    width:calc((100% - 99px) / 4);
+    height: 260px;
+    float: left;
+    margin-right: 33px;
+}
+#last-image{
+  margin-right:0;
+  background-color:hsl(0, 0%, 93%);
+}
+.bags-name{
+    /* border: 1px saddlebrown solid; */
+    width:calc(100% / 4);
+    margin-top: 24px;
+    font-family: GillSans;
+    font-size: 28px;
+    font-weight: 300;
+    text-align:center;
+    color: black;
+    float: left;
     margin-bottom: 0;
 }
-
-.card-a,
-.card-b{
-    float: left; 
-}
-.card-a p,
-.card-b p
-{
-    margin-top: 24px;
-}
-
-/* left */
-.card-b{
-    margin-left: 33px;
-    float: left;
-}
-
  
-/* right */
-.card-c{
-    margin-left: 33px;
-    float: left;
-}
-.card-c p{
-    margin-top: 24px;
-}
-.card-c{
-    float: left;
-}
-.boxes-2{
-    float: left;
+ 
+ /*2 row  */
+ .shoe-second-row{
+    display: flow-root;
+    padding-top: 56px;
 }
 
-/* 2 */
-
-.card-row-2{
-    margin-top: 56px;
-    width: 220px;
-    height: 220px;
-    background-color: #d8d8d8;
-}
-.boxes-2{
-    margin-left: 33px;
-}
-.boxes-2 p{
-    margin-top: 24px;
-   
-}
 /*********** People End ***************/
 
 .stylers-section{
@@ -385,8 +369,8 @@ ul.nav-rightside-menu{
 }
 
 /********* styler end ****************/
-
 /* shoes start */
+ 
 .shoes-section{
     padding-top: 109px;
     text-align: center;
@@ -408,96 +392,128 @@ ul.nav-rightside-menu{
     color: #797979;
 }
 
-.shoe-cards{
+.shoe-boxes{
    margin-top: 38px;
-   padding:0  70px;
    display: flow-root;
+ 
 }
-.shoe-card-1{
-    width: 454px;
-    height: 454px;
+.shoe-box-1{
+    width: calc((100% - 31px) / 2);
+    height: 554px;
     background-color:#f9f9f9;
-    float: left;  
+    float: left;   
+    margin-right: 31px;
 }
-.shoe-card_container{
-    margin-left: 31px;
+.color-section-1{
+    display: flow-root;
+    float: right;
+}
+.color-section-2{
+    margin: 0;
+    padding-top: 46px;
+    display: flow-root;
+    float: right;
+}
+.color-card-section-1{
+    background-color: #eae9e5;
+    width: calc((100% - 26px) / 2);
+    height: 263px;
     float: left;
+    margin-right: 26px;
 }
-.shoe-card_container-1{
-    margin-left: 26px;
+.last-section{
+    margin-right: 0;
+    background-color: #f9f9f9;
+}
+.color-card-section-2{
+    background-color: #ebebeb;
+    width: calc((100% - 26px) / 2);
+    height: 263px;
     float: left;
+    margin-right: 26px;
 }
-.shoe-card_container-2{
-    margin-top: 46px;
-    margin-left: 31px;
-    float: left;
+.last-section-1{
+    margin-right: 0;
+    background-color: #efefef;
 }
-.shoe-card_container-3{
-    margin-top: 46px;
-    margin-left: 26px;
-    float: left;
-}
-.shoe-card-2{
-    width: 220px;
-    height: 220px;
-    background-color:#eae9e5;
-}
-.shoe-card-3{
-    width: 220px;
-    height: 220px;
-    background-color:#f9f9f9;
-}
-.shoe-card-4{
-    width: 220px;
-    height: 220px;
-    background-color:#ebebeb;
-}
-.shoe-card-5{
-    width: 220px;
-    height: 220px;
-    background-color:#efefef;
-}
-.colors{
-    text-align: left;
+.price-1{
+    font-family: GillSans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #a8a8a8;
+    display: inline-block;
+    margin-right: 68px;
     margin-top: 11px;
 }
-.colors_text-1{
+.price{
+    display: inline-block;
+    font-family: GillSans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #a8a8a8;
+    margin-right: 68px;
+    margin-top: 11px;
+}
+.more-color{
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #a8a8a8;
+    display: inline-block;
+  
+}
+.more-color-1{
+    display: inline-block;
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #a8a8a8;
+}
+
+.shoe-text-1{
     margin: 0;
     font-size:16px;
     letter-spacing: 1px;
     color: #a8a8a8;
-    font-family: var(--FF-GillSans);   
+    font-family: var(--FF-GillSans);  
 }
-.colors_text-2{
+.shoe-text-2{
     font-size: 20px;
     line-height: 1.45;
     letter-spacing: 1px;
     color: #6c7178;
     font-family: var(--FF-GillSans);
 }
-.colors_text-3{
+.shoe-text-3{
     font-size: 20px;
     letter-spacing: 1px;
     color: #6c7178;
     font-family: var(--FF-GillSans);
     margin-bottom: 0;
 }
-.colors_text-4{
+.shoe-text-4{
     font-size: 20px;
     letter-spacing: 2.18px;
     color: #a8a8a8;
     font-family: var(--FF-GillSans);
 } 
+ 
 /********** Shoes end ***************/
 
 /********** here_help start **************/
 .faq-left-side{
     float: left;
     margin-left: 70px;
+    padding-top: 109px;
 }
 .faq-right-side{
     float: right;
     margin-right: 70px;
+    padding-top: 109px;
 }
 
 .faq-left-side-text-1,
@@ -537,10 +553,7 @@ ul.nav-rightside-menu{
     font-size: 24px;
     color:#797979;
 }
-/* .days{
-    font-size: 18px;
-    margin-top: 15px;
-} */
+
 .faq-days{
     font-size: 18px;
     margin-top: 15px;
@@ -733,39 +746,23 @@ ul.nav-rightside-menu{
     font-size: 18px;
 }
 .break-line{
-    width: 1300px;
+    width: 1200px;
     height: 1px;
     margin: 0 auto;
     background-color: #a8a8a8;
     
 }
 
-.social_meadia_links{
+.social_meadia{
     margin-top: 63px;
     float: left;
 }
-.google-link{
+
+.social_meadia_links:nth-child(1){
     margin-left: 100px;
-    float: left;
-    width: 26px;
-    height: 23px;
 
 }
-.twitter-link{
-    float: left;
-    width: 26px;
-    height: 23px;
-    margin-left: 47px;
-}
-
-.facebook-link {
-    float: left;
-    width: 26px;
-    height: 23px;
-    margin-left: 47px;
-}
-
-.instagram-link{
+.social_meadia_links{
     float: left;
     width: 26px;
     height: 23px;
