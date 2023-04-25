@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
 
@@ -329,7 +329,7 @@ ul.nav-rightside-menu{
     font-family:var(--FF-GillSans);
     font-size: 22px;
     text-align: center;
-    color: #868686;
+    color: black;
     margin-bottom: 0;
 }
 .stylers-section  h4{
@@ -681,15 +681,15 @@ ul.nav-rightside-menu{
     color:#a8a8a8;
 }
 .footer-service-links{
-     padding-top: 100px; 
     /* border: 1px solid green; */
+    padding-top: 100px;
     float: left;
     margin-left: 100px;
     font-family: var(--FF-Baskerville);
     margin-bottom: 116px;
 }
 .footer-legal-links{
-     padding-top: 100px;
+    padding-top: 100px;
     /* border: 1px solid rgb(77, 0, 128); */
     float: right;
     margin-right: 90px;
@@ -702,6 +702,7 @@ ul.nav-rightside-menu{
     padding: 0;
 }
 .services-nav-link{
+    /* border: 1px solid rgb(26, 0, 128); */
     float: left;
     font-size: 32px;
     color: #444;
@@ -713,8 +714,9 @@ ul.nav-rightside-menu{
     font-size: 18px;
 }
 .orders-nav-link{
+    /* border: 1px solid rgb(128, 0, 105); */
     width: 193px;
-    float: left;
+    float: right;
     margin-left: 60px;
     font-size: 32px;
     color: #444;
